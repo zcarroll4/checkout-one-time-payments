@@ -59,6 +59,10 @@ var updateQuantity = function (evt) {
     .setAttribute("i18n-options", `{ "total": "${formattedTotal}" }`);
   updateContent("button.submit");
 
+
+  var name = config.productName;
+  document.getElementById("name").innerHTML = name;
+
   // Disable the button if the customers hits the max or min
   if (quantity === MIN_PHOTOS) {
     document.getElementById("subtract").disabled = true;
