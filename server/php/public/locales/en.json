@@ -1,9 +1,9 @@
 {
-  "title": "Stripe Checkout Sample",
-  "headline": "Single photo",
-  "subline": "Purchase a Pasha original photo",
-  "sr-legal-text": "Number of copies (max 10)",
+  "title": "ZTech - Stripe Checkout Sample using PHP",
+  "headline": "ZTech Services",
+  "subline": "Purchase a web design package from ZTech",
+  "sr-legal-text": "Services limited to 3",
   "button": {
-    "submit": "Buy for {{total}}"
+    "submit": "Buy Now for {{total}}"
   }
 }

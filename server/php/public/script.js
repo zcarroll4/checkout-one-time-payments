@@ -1,17 +1,17 @@
-// The max and min number of photos a customer can purchase
-var MIN_PHOTOS = 1;
-var MAX_PHOTOS = 10;
+// The max and min number of services a customer can purchase
+var MIN_SERVICES = 1;
+var MAX_SERVICES = 3;
 
 var basicPhotoButton = document.getElementById("basic-photo-button");
 document
   .getElementById("quantity-input")
   .addEventListener("change", function (evt) {
     // Ensure customers only buy between 1 and 10 photos
-    if (evt.target.value < MIN_PHOTOS) {
-      evt.target.value = MIN_PHOTOS;
+    if (evt.target.value < MIN_SERVICES) {
+      evt.target.value = MIN_SERVICES;
     }
-    if (evt.target.value > MAX_PHOTOS) {
-      evt.target.value = MAX_PHOTOS;
+    if (evt.target.value > MAX_SERVICES) {
+      evt.target.value = MAX_SERVICES;
     }
   });
 
@@ -64,10 +64,10 @@ var updateQuantity = function (evt) {
   document.getElementById("name").innerHTML = name;
 
   // Disable the button if the customers hits the max or min
-  if (quantity === MIN_PHOTOS) {
+  if (quantity === MIN_SERVICES) {
     document.getElementById("subtract").disabled = true;
   }
-  if (quantity === MAX_PHOTOS) {
+  if (quantity === MAX_SERVICES) {
     document.getElementById("add").disabled = true;
   }
 };
